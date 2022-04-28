@@ -1,0 +1,4 @@
+<!--components/search/search.wxml-->
+<view class="search" bindtouchstart="onfocus">
+    <view class="title">搜索</view>
+</view>

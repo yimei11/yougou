@@ -1,0 +1,18 @@
+/* components/search/search.wxss */
+.search{
+    width: 100vw;
+    height: 100rpx;
+    padding-top:7rpx;
+    box-sizing: border-box;
+    background:#17c8ac;
+    text-align:center;
+}
+.search .title{
+    width: 99%;
+    margin:0 auto;
+    height: 90rpx;
+    line-height:90rpx;
+    background:#fff;
+    border-radius:10rpx;
+    color:#999;
+}

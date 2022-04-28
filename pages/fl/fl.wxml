@@ -1,0 +1,23 @@
+<!--pages/fl/fl.wxml-->
+<van-nav-bar left-text="商品分类" border="{{false}}" custom-style="background:#17c8ac;" class="navs"/>
+<search></search>
+<view class="container">
+    <van-sidebar active-key="{{ activeKey }}" custom-class="sidebar" bind:change="onChange">
+        <block wx:for="{{cate}}" wx:key="*this">
+            <van-sidebar-item title="{{item.cat_name}}" />
+        </block>
+    </van-sidebar>
+    <scroll-view class="content" scroll-y scroll-top="{{h}}">
+        <block wx:for="{{children}}" wx:key="*this">
+            <view class="top">/ {{item.cat_name}} /</view>
+            <view class="list">
+                <block wx:for="{{item.children}}" wx:key="*this">
+                    <view class="item">
+                        <image src="{{item.cat_icon}}" class="img"></image>
+                        <view class="text">{{item.cat_name}}</view>
+                    </view>
+                </block>
+            </view>
+        </block>
+    </scroll-view>
+</view>

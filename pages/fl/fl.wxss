@@ -1,0 +1,41 @@
+/* pages/fl/fl.wxss */
+.navs .van-nav-bar__text{
+    color:#fff;
+}
+.container{
+    display:flex;
+}
+.container .sidebar{
+    height: calc(100vh - 54px);
+    overflow: scroll;
+}
+.container .content{
+    flex:1;
+    height: calc(100vh - 54px);
+}
+.container .content .top{
+    width: 100%;
+    text-align:center;
+    margin:10rpx 0 20rpx;
+}
+.container .content .list{
+    display:flex;
+    flex-wrap: wrap;
+    text-align:center;
+}
+.container .content .list .item{
+    width: 30%;
+    margin-top:10rpx;
+    margin-right:30rpx;
+}
+.container .content .list .item:nth-child(3n){
+    margin-right:0rpx;
+}
+.container .content .list .item .img{
+    width: 120rpx;
+    height: 120rpx;
+}
+.container .content .list .item .text{
+    font-size:30rpx;
+    font-weight: bold;
+}

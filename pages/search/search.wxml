@@ -1,0 +1,13 @@
+<!--pages/search/search.wxml-->
+<van-nav-bar left-text="搜索中心" left-arrow bind:click-left="onClickLeft" border="{{false}}" custom-style="background:#17c8ac;" class="navs"/>
+<view class="search">
+    <van-search value="{{value}}" shape="round" bind:change="change"/>
+    <button class="btn" bindtap="onSearch">搜索</button>
+</view>
+<view class="list" hidden="{{!show}}">
+    <van-cell-group>
+        <block wx:for="{{search}}" wx:key="index">
+            <van-cell title="{{item.goods_name}}" is-link title-class="title"/>
+        </block>
+    </van-cell-group>
+</view>

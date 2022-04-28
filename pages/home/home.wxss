@@ -1,0 +1,49 @@
+/* pages/home/home.wxss */
+.navs .van-nav-bar__text{
+    color:#fff;
+}
+.swiper .item .img{
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    display:flex;
+    justify-content: space-between;
+    margin:20rpx;
+}
+.nav .img{
+    width: 180rpx;
+    height: 200rpx;
+}
+.floor .img{
+    height: 70rpx;
+}
+.floor .list{
+    position:relative;
+}
+.floor .list image{
+    width: 33%;
+    height: 200rpx;
+}
+.floor .list image:first-of-type{
+    width: 33%;
+    height: 400rpx;
+}
+.floor .list .image1{
+    position:absolute;
+    left:252rpx;
+}
+.floor .list .image2{
+    position:absolute;
+    left:502rpx;
+}
+.floor .list .image3{
+    position:absolute;
+    top:202rpx;
+    left:252rpx;
+}
+.floor .list .image4{
+    position:absolute;
+    top:202rpx;
+    left:502rpx;
+}

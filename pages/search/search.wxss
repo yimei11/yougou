@@ -1,0 +1,21 @@
+/* pages/search/search.wxss */
+.navs .van-nav-bar__text{
+    color:#fff;
+}
+.search{
+    display:flex;
+    align-items: center;
+}
+.search .btn{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+    color:#fff;
+    background:#17c8ac;
+}
+.title{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

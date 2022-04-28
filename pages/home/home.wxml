@@ -1,0 +1,25 @@
+<!--pages/home/home.wxml-->
+<van-nav-bar left-text="优购首页" border="{{false}}" custom-style="background:#17c8ac;" class="navs"/>
+<search></search>
+<swiper indicator-dots autoplay circular class="swiper">
+    <block wx:for="{{swiper}}" wx:key="*this">
+        <swiper-item class="item">
+            <image src="{{item.image_src}}" class="img"></image>
+        </swiper-item>
+    </block>
+</swiper>
+<view class="nav">
+    <block wx:for="{{nav}}" wx:key="*this">
+        <image src="{{item.image_src}}" class="img"></image>
+    </block>
+</view>
+<view class="floor">
+    <block wx:for="{{floor}}" wx:key="*this">
+        <image src="{{item.floor_title.image_src}}" class="img"></image>
+        <view class="list">
+            <block wx:for="{{item.product_list}}" wx:key="index">
+                <image src="{{item.image_src}}" class="image{{index}}"></image>
+            </block>
+        </view>
+    </block>
+</view>
